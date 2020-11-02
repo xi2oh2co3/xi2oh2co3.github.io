@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xi2oh2co3.github.io</id>
     <title>碱式碳酸希的小站</title>
-    <updated>2020-11-02T00:33:13.103Z</updated>
+    <updated>2020-11-02T01:46:42.216Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xi2oh2co3.github.io"/>
     <link rel="self" href="https://xi2oh2co3.github.io/atom.xml"/>
@@ -11,6 +11,15 @@ BlueRain! Jumped up high!</subtitle>
     <logo>https://xi2oh2co3.github.io/images/avatar.png</logo>
     <icon>https://xi2oh2co3.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 碱式碳酸希的小站</rights>
+    <entry>
+        <title type="html"><![CDATA[实例]]></title>
+        <id>https://xi2oh2co3.github.io/post/shi-li/</id>
+        <link href="https://xi2oh2co3.github.io/post/shi-li/">
+        </link>
+        <updated>2020-11-02T01:45:36.000Z</updated>
+        <content type="html"><![CDATA[<p>一只普通的实例</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://xi2oh2co3.github.io/post/hello-gridea/</id>

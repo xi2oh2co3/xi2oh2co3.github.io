@@ -1,23 +1,22 @@
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://xi2oh2co3.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
-    <link rel="stylesheet" href="https://xi2oh2co3.github.io/styles/main.css">
-    <link rel="stylesheet" href="https://xi2oh2co3.github.io/media/css/font-awesome.css">
     <meta name="description" content="Xi2OH2CO3's Little Blog!
 BlueRain! Jumped up high!" />
+    <link rel="stylesheet" href="https://xi2oh2co3.github.io/styles/main.css">
+    <link rel="stylesheet" href="https://xi2oh2co3.github.io/media/css/font-awesome.css">
     <title>碱式碳酸希的小站</title>
 </head>
-
 
 <body>
     <!-- 响应式布局，针对PC端内容显示 -->
     <div id="content">
-        <div class="nav-large">
+        <div class="talkShow">
             <div class="row">
                 <div class="side"><body>
     
@@ -252,185 +251,7 @@ BlueRain! Jumped up high!"]'>&nbsp;</span>
     }
 </script>
 </div>
-                
-                <div class="col-md-1 col-lg-3"></div>
-                <div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
-                    <body">
-    <div class="archives-content">
-        
-        
-        <div class="archives-year">2020</div>
-        <ul>
-            
-            
-            <li><span></span>
-                <div>
-                  <a href="https://xi2oh2co3.github.io/post/shi-li/" class="post">
-                    <div class="archives-title">实例</div>
-                    <div class="archives-time">2020-11-02</div>
-                </a>
-                    
-                </div>
-                <!-- 2020-11-02 -->
-            </li>
-            
-            
-            
-            
-        </ul>
-        
-        <div class="archives-year">2018</div>
-        <ul>
-            
-            
-            
-            
-            <li><span></span>
-                <div>
-                  <a href="https://xi2oh2co3.github.io/post/hello-gridea/" class="post">
-                    <div class="archives-title">Hello Gridea</div>
-                    <div class="archives-time">2018-12-12</div>
-                </a>
-                    
-                </div>
-                <!-- 2018-12-12 -->
-            </li>
-            
-            
-        </ul>
-        
-    </div>
-</body">
-                    <div style="background:white">
-                        <div class="pagi">
-    <ul>
-        
-        <li><a style="width:100px">&nbsp;</a></li>
-        
-                <li><a id="page1">1</a></li>
-                <li><a id="page2" class="active">2</a></li>
-                <li><a id="page3">3</a></li>
-                
-        <li><a style="width:100px">&nbsp;</a></li>
-        
-            </ul>
-</div>
-
-<div id="pagination-prev" style="display:none"> 
-</div>
-<div id="pagination-next" style="display:none"> </div>
-
-
-<script>
-    var prevstr = document.getElementById("pagination-prev").innerHTML;
-    var nextstr = document.getElementById("pagination-next").innerHTML;
-    var page1 = document.getElementById("page1");
-    var page2 = document.getElementById("page2");
-    var page3 = document.getElementById("page3");
-    page1.innerHTML = '-';
-    page2.innerHTML = '1';
-    page3.innerHTML = '-';
-    if (prevstr.length > 5) {
-        if (prevstr.indexOf("page/") != -1) {
-            var prevnum = parseInt(prevstr.split("page/")[1]);
-            page1.innerHTML = prevnum;
-            page2.innerHTML = prevnum + 1;
-        } else {
-            page1.innerHTML = 1;
-            page2.innerHTML = 2;
-        }
-    }
-    if (nextstr.indexOf("page/") != -1) {
-        var nextnum = parseInt(nextstr.split("page/")[1]);
-        page3.innerHTML = nextnum;
-        page2.innerHTML = nextnum - 1;
-    }
-</script>
-                        <div style="padding-bottom:10%"></div>
-                    </div>
-                </div>
-                <div class="col-md-1 col-lg-2"></div>
-                
-                <div class="col-xs-6 col-sm-2"></div>
-            </div>
-            
-                <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-</head>
-<body>
-    <div class="miniMode">
-        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
-        </meting-js>
-    </div>   
-</body>
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-<script>
-    var aplayerid = "115457490";
-    var aplayerserver = "netease";
-    var aplayerorder = "default";
-    var aplayerautoplay = "false";
-    var aplayer = $("#myaplayer");
-    aplayer.attr("server",aplayerserver);
-    aplayer.attr("id",aplayerid);
-    aplayer.attr("order",aplayerorder);
-    if(aplayerautoplay=="true")
-        aplayer.attr("autoplay","true");
-</script>
-
-<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-<script>
-    function aplayerbtnInit(){
-        var player = document.querySelectorAll('meting-js')[0].aplayer;
-        player.lrc.hide();
-        var mbabtn = $("#mbaplayer");
-        if(player.paused==false)
-        {
-            mbabtn.removeClass("fa-play-circle-o");
-            mbabtn.addClass("fa-pause-circle");
-        }
-        else
-        {
-            mbabtn.addClass("fa-play-circle-o");
-            mbabtn.removeClass("fa-pause-circle");
-        }
-    }
-
-    function aplayerPlay(){
-        var player = document.querySelectorAll('meting-js')[0].aplayer;
-        var mbabtn = $("#mbaplayer");
-        if(player.paused==true)
-        {
-            player.play();
-            mbabtn.removeClass("fa-play-circle-o");
-            mbabtn.addClass("fa-pause-circle");
-        }
-        else
-        {
-            player.pause();
-            mbabtn.addClass("fa-play-circle-o");
-            mbabtn.removeClass("fa-pause-circle");
-        }
-    }
-</script>
-            
-        </div>
-        <div id="bg">
-        </div>
-        <div id="bgchoice" style="display: none">link
-            </div>
-            
-            <div id="bgurl" style="display:none">https://pic.downk.cc/item/5f9f64291cd1bbb86b472a16.png</div>
-               
-    </div>
-
-    <!-- 响应式布局，针对手机端内容显示 -->
-    <div class="nav-small">
-        <head>
+                <div class="tbar"> <head>
   <!-- 引入Bootstrap核心样式文件 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/bootstrap.min.css">
 </head>
@@ -546,78 +367,121 @@ BlueRain! Jumped up high!"]'>&nbsp;</span>
   }
   </script> 
 </body>
-            <div style="margin-top:60px"></div>
-            <body">
-    <div class="archives-content">
-        
-        
-        <div class="archives-year">2020</div>
-        <ul>
-            
-            
-            <li><span></span>
-                <div>
-                  <a href="https://xi2oh2co3.github.io/post/shi-li/" class="post">
-                    <div class="archives-title">实例</div>
-                    <div class="archives-time">2020-11-02</div>
-                </a>
-                    
+                    <div style="margin-top:60px"></div>
                 </div>
-                <!-- 2020-11-02 -->
-            </li>
-            
-            
-            
-            
-        </ul>
-        
-        <div class="archives-year">2018</div>
-        <ul>
-            
-            
-            
-            
-            <li><span></span>
-                <div>
-                  <a href="https://xi2oh2co3.github.io/post/hello-gridea/" class="post">
-                    <div class="archives-title">Hello Gridea</div>
-                    <div class="archives-time">2018-12-12</div>
-                </a>
-                    
-                </div>
-                <!-- 2018-12-12 -->
-            </li>
-            
-            
-        </ul>
-        
-    </div>
-</body">
-            <div class="pagination-container">
                 
+                <div class="col-md-1 col-lg-3"></div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-8" style="z-index: 999;">
+                    <body>
+    <div id="talks">
+        <div id="talkContainer">
+        </div>
+        <button id="getmorebt" type="button" onclick="add()">获取更多</button>
+    </div>
+    </div>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+    </div>
+</body>
+
+                </div>
+                <div class="col-md-1 col-lg-1"></div>
                 
             </div>
-            <div style="margin-bottom:60px">&nbsp;</div>
+            
+                <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+</head>
+<body>
+    <div class="miniMode">
+        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
+        </meting-js>
+    </div>   
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+    var aplayerid = "115457490";
+    var aplayerserver = "netease";
+    var aplayerorder = "default";
+    var aplayerautoplay = "false";
+    var aplayer = $("#myaplayer");
+    aplayer.attr("server",aplayerserver);
+    aplayer.attr("id",aplayerid);
+    aplayer.attr("order",aplayerorder);
+    if(aplayerautoplay=="true")
+        aplayer.attr("autoplay","true");
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<script>
+    function aplayerbtnInit(){
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        player.lrc.hide();
+        var mbabtn = $("#mbaplayer");
+        if(player.paused==false)
+        {
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        }
+        else
+        {
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+
+    function aplayerPlay(){
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        var mbabtn = $("#mbaplayer");
+        if(player.paused==true)
+        {
+            player.play();
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        }
+        else
+        {
+            player.pause();
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+</script>
+            
         </div>
-        <div id="landlord">
-            <div class="message" style="opacity:0"></div>
-            <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+        <div id="bg">
         </div>
-        <div id="domainname" style="display:none">https://xi2oh2co3.github.io</div>
+        <div id="bgchoice" style="display: none">link
+            </div>
+            
+            <div id="bgurl" style="display:none">https://pic.downk.cc/item/5f9f64291cd1bbb86b472a16.png</div>
+               
+    </div>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="domainname" style="display:none">https://xi2oh2co3.github.io</div>
 </body>
 
 </html>
-
-<script type="text/javascript">
-    var message_Path = '/live2d/'
-    var home_Path = document.getElementById("domainname").innerHTML+"/"; //此处修改为你的域名，必须带斜杠
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
-<script type="text/javascript" src="https://xi2oh2co3.github.io/media/live2d/js/message.js"></script>
-<script type="text/javascript">
-    loadlive2d("live2d", "https://xi2oh2co3.github.io/media/live2d/assets/tororo.model.json");
-</script>
-
+        
+            <script type="text/javascript">
+                var message_Path = '/live2d/'
+                var home_Path = document.getElementById("domainname").innerHTML+"/"; //此处修改为你的域名，必须带斜杠
+            </script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
+            <script type="text/javascript" src="https://xi2oh2co3.github.io/media/live2d/js/message.js"></script>
+            <script type="text/javascript">
+                loadlive2d("live2d", "https://xi2oh2co3.github.io/media/live2d/assets/tororo.model.json");
+            </script>
+            
 
 <script>
         var bgchoice=$('#bgchoice').html();
@@ -627,10 +491,106 @@ BlueRain! Jumped up high!"]'>&nbsp;</span>
             for (var i = 0; i < 3; i++)
                 bgurl = bgurl.replace("\\", "/");
         bg.css("background", "url('" + bgurl + "')");
-
-        window.onload = function(){
-            aplayerbtnInit();
-        }
 </script>
 
-    <script src="https://xi2oh2co3.github.io/media/js/index.js"></script>
+            <script src="https://xi2oh2co3.github.io/media/js/index.js"></script>
+
+
+<script>
+    var talksall = [];
+    var talks = [];
+    var talkindex;
+
+    get();
+    add();
+
+    function get() {
+        var t = JSON.parse('[{"author":"碱式碳酸希","img":"https://ae02.alicdn.com/kf/Ha46182d8c8d44560a8549723d269615en.png","text":"今天也没有努力——明天会更好！","time":"昨日"}]');
+        talkindex = t.length - 1;
+        for (var i = t.length - 1; i >= 0; i--) {
+            var d = {};
+            d["time"] = t[i].time;
+            d["author"] = t[i].author;
+            d["text"] = t[i].text;
+            d["img"] = t[i].img;
+            talksall.push(d);
+        }
+    }
+
+    function add() {
+        for (var i = talkindex; i >= 0 && i > talkindex - 3; i--) {
+            talks.push(talksall[i]);
+        }
+        talkindex = (talkindex - 3) >= 0 ? (talkindex - 3) : -1;
+        if (talkindex < 0) $("#getmorebt").hide();
+        show();
+        refreshImg();
+    }
+
+    function show() {
+        var talkT = document.getElementById("talkContainer");
+        talkT.innerHTML = "";
+        for (var i = 0; i < talks.length; i++) {
+            if (talks[i].img != '') {
+                talkT.innerHTML += '\
+            <div class="talk" v-for="t in talks"> \
+                <img src="' + talks[i].img + '" class="talkimg"> \
+                <div class="ainfo">\
+                    <div class="ainfo-intro">\
+                        <img class="intro1" src="https://xi2oh2co3.github.io/images/avatar.png?v=1604281587492">\
+                        <div class="author">' + talks[i].author + '</div>·\
+                        <div class="time">' + talks[i].time + '</div>\
+                    </div>\
+                </div>\
+                <div class="talkcontent">' + talks[i].text + '\
+                </div\>\
+            ';
+            } else {
+                talkT.innerHTML += '\
+            <div class="talk" v-for="t in talks"> \
+                <div class="ainfo">\
+                    <div class="ainfo-intro">\
+                        <img class="intro1" src="https://xi2oh2co3.github.io/images/avatar.png?v=1604281587492">\
+                        <div class="author">' + talks[i].author + '</div>·\
+                        <div class="time">' + talks[i].time + '</div>\
+                    </div>\
+                </div>\
+                <div class="talkcontent">' + talks[i].text + '\
+                </div\>\
+            ';
+            }
+        }
+    }
+
+    function refreshImg() {
+        // 获取弹窗
+        var modal = document.getElementById('myModal');
+
+        // 获取图片插入到弹窗 - 使用 "alt" 属性作为文本部分的内容
+        var img = document.getElementsByClassName("talkimg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        for (var i in img) {
+            img[i].onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        }
+    
+        // 图片关闭
+        var modalImg = document.getElementById('img01');
+        // 鼠标点击模型外区域关闭登录框
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            if (event.target == social) {
+                social.style.display = "none";
+            }
+        }
+    }
+
+    window.onload = function(){
+        aplayerbtnInit();
+    }
+</script>
