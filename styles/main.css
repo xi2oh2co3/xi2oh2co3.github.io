@@ -2186,15 +2186,15 @@ p > code {
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
-      cursor: url('/media/curs/pointer.cur'), default;
+      cursor: url('https://cdn.jsdelivr.net/gh/xi2oh2co3/xi2oh2co3.github.io@main/media/curs/pointer.cur'), default;
     }a {
-      cursor: url('/media/curs/link.cur'), pointer !important;
+      cursor: url('https://cdn.jsdelivr.net/gh/xi2oh2co3/xi2oh2co3.github.io@main/media/curs/link.cur'), pointer !important;
     }input, textarea, code {
-      cursor: url('/media/curs/text.cur'), text !important;
+      cursor: url('https://cdn.jsdelivr.net/gh/xi2oh2co3/xi2oh2co3.github.io@main/media/curs/text.cur'), text !important;
     }code > span.copy-code {
-      cursor: url('/media/curs/alternate.cur'), text !important;
+      cursor: url('https://cdn.jsdelivr.net/gh/xi2oh2co3/xi2oh2co3.github.io@main/media/curs/alternate.cur'), text !important;
     }.post img {
-      cursor: url('/media/curs/zoom~.cur'), zoom-in !important;
+      cursor: url('https://cdn.jsdelivr.net/gh/xi2oh2co3/xi2oh2co3.github.io@main/media/curs/zoom~.cur'), zoom-in !important;
     }.post img {
-      cursor: url('/media/curs/move.cur'), zoom-out !important;
+      cursor: url('https://cdn.jsdelivr.net/gh/xi2oh2co3/xi2oh2co3.github.io@main/media/curs/move.cur'), zoom-out !important;
     }
