@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xi2oh2co3.github.io</id>
     <title>碱式碳酸希的小站</title>
-    <updated>2020-11-02T04:11:15.463Z</updated>
+    <updated>2020-11-02T07:14:32.833Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xi2oh2co3.github.io"/>
     <link rel="self" href="https://xi2oh2co3.github.io/atom.xml"/>
@@ -12,12 +12,52 @@ BlueRain! Jumped up high!</subtitle>
     <icon>https://xi2oh2co3.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 碱式碳酸希的小站</rights>
     <entry>
-        <title type="html"><![CDATA[实例]]></title>
+        <title type="html"><![CDATA[Ubuntu 20.04 修复 Dash to dock]]></title>
         <id>https://xi2oh2co3.github.io/post/shi-li/</id>
         <link href="https://xi2oh2co3.github.io/post/shi-li/">
         </link>
         <updated>2020-11-02T01:45:36.000Z</updated>
-        <content type="html"><![CDATA[<p>一只普通的实例</p>
+        <summary type="html"><![CDATA[<p>专治各种Ubuntu 20.04 水土不服。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>专治各种Ubuntu 20.04 水土不服。</p>
+<!-- more -->
+<p><ul class="markdownIt-TOC">
+<li><a href="#ubuntu-2004-%E4%BF%AE%E5%A4%8D-dash-to-dock">Ubuntu 20.04 修复 Dash to dock</a>
+<ul>
+<li><a href="#%E7%BC%98%E8%B5%B7">缘起</a></li>
+<li><a href="#%E4%BF%AE%E5%A4%8D">修复</a>
+<ul>
+<li><a href="#preparation">Preparation</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85-github-%E7%89%88%E6%9C%AC%E7%9A%84-dash-to-dock">安装 Github 版本的 Dash to Dock</a></li>
+<li><a href="#%E9%87%8D%E5%90%AFgnome">重启gnome</a></li>
+</ul>
+</li>
+<li><a href="#%E9%B8%A3%E8%B0%A2">鸣谢</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h1 id="ubuntu-2004-修复-dash-to-dock">Ubuntu 20.04 修复 Dash to dock</h1>
+<h2 id="缘起">缘起</h2>
+<p>Dash to dock 是大家都很喜欢使用的插件，但是现在它在 Ubuntu 20.04 下经常出现各种问题，最经典的就是莫名其妙出现双重dock。 网上总说您没有关闭 Ubuntu Dock，一打开优化一看，阿好，没开呢！于是乎GG。</p>
+<h2 id="修复">修复</h2>
+<p>几经周折，在Github的一只Issue里面找到了解决方案。</p>
+<h3 id="preparation">Preparation</h3>
+<p>请确保您有： <code>git</code> <code>make</code> <code>msgfmt</code>。方便起见，您可以这样安装。</p>
+<pre><code class="language-bash">sudo apt install git make gettext
+</code></pre>
+<h3 id="安装-github-版本的-dash-to-dock">安装 Github 版本的 Dash to Dock</h3>
+<p>以下内容无需加速：</p>
+<pre><code>git clone https://github.com/micheleg/dash-to-dock.git -b gnome-3-36
+cd dash-to-dock/
+make
+make install
+</code></pre>
+<h3 id="重启gnome">重启gnome</h3>
+<p>这该会了吧…… 摁下Alt+F2快捷键，在运行那里输入r，稍后片刻即可。</p>
+<p>现在，您应该已经看到了正常的dash to dock。快去优化中设置它吧！</p>
+<h2 id="鸣谢">鸣谢</h2>
+<p><a href="https://github.com/micheleg/dash-to-dock/issues/1130">Not working on Ubuntu 20.04</a></p>
 ]]></content>
     </entry>
     <entry>
