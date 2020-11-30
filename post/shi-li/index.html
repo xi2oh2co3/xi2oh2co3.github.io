@@ -10,7 +10,7 @@
 BlueRain! Jumped up high!">
 <meta name="theme-color" content="#000">
 <title>Ubuntu 20.04 修复 Dash to dock | 碱式碳酸希的小站</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1605510397081">
+<link rel="shortcut icon" href="/favicon.ico?v=1606721092093">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -209,7 +209,7 @@ BlueRain! Jumped up high!">
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">3</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -635,6 +635,10 @@ make install
   </div>
   <div class="nav">
     <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="解决 git clone 时 Failed to connect to 127.0.0.1 port 1080: 拒绝连接 的问题" href="https://xi2oh2co3.github.io/post/jie-jue-git-clone-shi-failed-to-connect-to-127001-port-1080-ju-jue-lian-jie-de-wen-ti/">解决 git clone 时 Failed to connect to 127.0.0.1 port 1080: 拒绝连接 的问题</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="解决 git clone 时 Failed to connect to 127.0.0.1 port 1080: 拒绝连接 的问题" href="https://xi2oh2co3.github.io/post/jie-jue-git-clone-shi-failed-to-connect-to-127001-port-1080-ju-jue-lian-jie-de-wen-ti/">上一篇</a>
       
     </div>
     <div class="nav-next">
@@ -1672,6 +1676,30 @@ make install
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://xi2oh2co3.github.io/post/jie-jue-git-clone-shi-failed-to-connect-to-127001-port-1080-ju-jue-lian-jie-de-wen-ti/"" data-c="
+          &lt;p&gt;不需要删除你的代理！&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;缘起&#34;&gt;缘起&lt;/h1&gt;
+&lt;p&gt;今天想安装一个软件，在 git clone 时报错，克隆失败并且显示了下面的一段话：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Failed to connect to 127.0.0.1 port 1080: 拒绝连接
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上网一搜，发现是代理的问题，让我删除代理。“那好吧”，我说，“那我就删了代理”。&lt;br&gt;
+结果我从git设置到环境变量的proxy代理都删了一次，竟然还是没给我解决！查看1080端口，也是没有占用的。这就很奇怪了。&lt;/p&gt;
+&lt;h1 id=&#34;正确方法&#34;&gt;正确方法&lt;/h1&gt;
+&lt;p&gt;寻本溯源，搞了很久，终于发现了问题的本源：&lt;/p&gt;
+&lt;p&gt;几个月前，我为了加速git下载，给我的git上了一个 &lt;code&gt;蕃蔷&lt;/code&gt; 的代理。今天机场服务器爆炸（可能要跑路了），就突然出了代理问题。要说这两件事情之间没有关系，我是不信的。&lt;/p&gt;
+&lt;p&gt;之前的机场爆炸，我丝毫没慌，毕竟机场多、账号多，又不是蕃不过来。随手切了一个机场，我的git就爆炸了。究其根本，还是原来的设置问题：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;github 上设置代理的教程端口全部填1080，在你打算爪巴墙加速时，这是不对的！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;github&lt;/code&gt;上设置给出的1080端口只是一个泛用的，OK不OK看个人。这个&lt;code&gt;port 1080&lt;/code&gt;应该被替换为你自己本机代理的端口号。&lt;br&gt;
+比如我&lt;code&gt;蕃蔷&lt;/code&gt;时代理的端口是&lt;code&gt;1234&lt;/code&gt;，那我的设置应该是：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global https.proxy http://127.0.0.1:1234:        //http的代理
+git config --global https.proxy https://127.0.0.1:12334:        //https的代理
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;同时，在&lt;code&gt;git clone&lt;/code&gt;时你该开的软件都开上，小飞机啊clash啊什么的，懂的都懂。&lt;/p&gt;
+">解决 git clone 时 Failed to connect to 127.0.0.1 port 1080: 拒绝连接 的问题</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://xi2oh2co3.github.io/post/shi-li/"" data-c="

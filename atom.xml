@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xi2oh2co3.github.io</id>
     <title>碱式碳酸希的小站</title>
-    <updated>2020-11-16T07:40:33.745Z</updated>
+    <updated>2020-11-30T07:24:57.492Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xi2oh2co3.github.io"/>
     <link rel="self" href="https://xi2oh2co3.github.io/atom.xml"/>
@@ -11,6 +11,17 @@ BlueRain! Jumped up high!</subtitle>
     <logo>https://xi2oh2co3.github.io/images/avatar.png</logo>
     <icon>https://xi2oh2co3.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 碱式碳酸希的小站</rights>
+    <entry>
+        <title type="html"><![CDATA[解决 git clone 时 Failed to connect to 127.0.0.1 port 1080: 拒绝连接 的问题]]></title>
+        <id>https://xi2oh2co3.github.io/post/jie-jue-git-clone-shi-failed-to-connect-to-127001-port-1080-ju-jue-lian-jie-de-wen-ti/</id>
+        <link href="https://xi2oh2co3.github.io/post/jie-jue-git-clone-shi-failed-to-connect-to-127001-port-1080-ju-jue-lian-jie-de-wen-ti/">
+        </link>
+        <updated>2020-11-30T07:09:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>不需要删除你的代理！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>不需要删除你的代理！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Ubuntu 20.04 修复 Dash to dock]]></title>
         <id>https://xi2oh2co3.github.io/post/shi-li/</id>
